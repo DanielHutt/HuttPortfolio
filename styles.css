@@ -7,22 +7,24 @@ html, body
 
 .nav {
     height: 10vh;
-    display: inline-block;
+    display: grid;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    grid-template-columns: repeat(3, 1fr);
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     min-height: 40px;
     background: green;
 }
 
 .nav li {
-    display: inline;
+    display: grid;
     padding: .4em .8em;
-    margin: 0;
+    margin: 5%;
     vertical-align: middle;
     background-color: white;
+    justify-content: center;
 }
 
 .nav li:hover {
