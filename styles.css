@@ -56,16 +56,23 @@ html, body
     background:gray;
     display: grid;    
     margin: 5%;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 100%;
     grid-gap: 10px;
-    justify-content: flex-end;
 }
 
-@media (max-width: 700px) {
+@media (min-width: 1000px) and (max-width: 1199px)  {
     .project-grid {        
-        grid-template-columns: 100%;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
+
+@media (min-width: 1200px) {
+    .project-grid {        
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
 #project-link {
     max-width: 100%;
 }
